@@ -46,6 +46,11 @@ ul{
   list-style:none;
 }
 
+.img{
+  height: 35%;
+  width: 35%;
+}
+
 .info-text {
    text-align:center;
 }
