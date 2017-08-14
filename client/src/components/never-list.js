@@ -4,7 +4,6 @@ import {updateUserNevers, fetchRestaurant} from '../actions/hungry';
 
 export class NeverList extends React.Component {
   componentDidMount(){
-    console.log(this.props.restaurant);
   }
 
       handleClick(e){
@@ -17,7 +16,7 @@ export class NeverList extends React.Component {
 
         handleYes(e){
         e.preventDefault();
-        window.location.assign(`https://www.google.com/maps/search/${this.props.restaurant[0].location.display_address[0]+this.props.restaurant[0].location.display_address[1]}`);
+        window.open(`https://www.google.com/maps/search/${this.props.restaurant[0].location.display_address[0]+this.props.restaurant[0].location.display_address[1]}`, '_blank');
         }
 
 render() {
