@@ -3,9 +3,6 @@ body {
   padding: 20px;
   font-family: fantasy;
   background-color: gold;
-    border: 2px solid;
-    border-radius: 15px 550px;
-    margin-top: 10%;
 }
 .root {
 text-align: center;
@@ -15,36 +12,34 @@ text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 10px;
 
 }
 #button1{
   font-family: fantasy;
   font-size: 1em;
+  padding: 10px;
 }
 
 
 #button2{
   font-family: fantasy;
   font-size: 1em;
+  padding: 10px;
 }
 
 .City{
   font-family: fantasy;
   font-size: 1em;
+  padding: 10px;
+  width: 50%;
+  margin-right: 10px;
 }
 
 #search{
   font-family: fantasy;
   font-size: 1em;
-}
-
-
-#triangle-right {
-	width: 0;
-	height: 0;
-	border-top: 50px solid transparent;
-	border-left: 100px solid red;
-	border-bottom: 50px solid transparent;
+  padding: 10px;
 }
 
 ul{
@@ -52,7 +47,7 @@ ul{
 }
 
 .info-text {
-   text-align:center; 
+   text-align:center;
 }
 
  @media (max-width:1024px) {
@@ -78,4 +73,4 @@ text-align: center;
 body{
   border-radius: 20px 90px;
 }
-} 
+}
