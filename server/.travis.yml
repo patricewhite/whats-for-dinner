@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: YUIH/3r1aCqrOGJH9KJ0qTRRWrai/lDuYepwSOEwcaLopFjcZmcwizD0NUtDm1GNZNr8sJt7TO/01kEWPbkOd6xbNFJeA6EMlimmrkHZ/W6nF/LDDcn3ra/GbhcjYj6iXcGaTSBIiX719TdQRNe0osfVWWQ15vroNUfw5PEzTb/LDJJnGN+epOd0Ja779FZQkpF2IStbxEdRnh3/GNKhxh8MrKsQs2u1DH0E4AHVH3z3J4LCRlRIlgYXK4qq2oWvn2uZOoCgr3flCRWA6Fhmvt5VkH0gQojgBcbtaF5hV3Wr/bT3fj9GKxpYcg5HuX146QpxmLHj24JgMTWOwSWsPG7lIJ2JX8eVRrsRfysk13BmLfkii2Fzg0azpCurrKMhuxgzOFRkh073YXkW2hQL2+3DixvBjP1gsG2zsEN6osMNMrnC8nLJ/XKyvVMYBiQ05WPRfdK2KgL22i9+l54ABIbu6mKmD+tOe3frKz0zdKOXzKcsG4+lm8bp7kNorA5GGbbve1F2cKfbs/GgAfGrjfrNax0CF6g69T85L1pYbdN0HU58W1/Pqi1gjhVpA0osE+pcmWR/xhpjhBQGRsAMuhgI0mi7K8sBz4V4PJ9Ved8VoKBmrvrtBeI1npLDz0gj0bRgjlPZsQp90/bYVT9FHAVDrDamovlvYdciAwxTOAg=
+  app: whats-for-dinner
+  on:
+    repo: patricewhite/whats-for-dinner
