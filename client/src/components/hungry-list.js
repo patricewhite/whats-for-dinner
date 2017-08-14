@@ -10,7 +10,7 @@ export class HungryList extends React.Component {
     const value = this.input.value;
     this.props.dispatch(setLocation(value));
     this.props.dispatch(fetchRestaurant(value));
-    this.value="";
+    this.input.value = '';
   }
 
   render() {
