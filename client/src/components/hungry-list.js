@@ -8,7 +8,6 @@ export class HungryList extends React.Component {
   submitQuery(event){
     event.preventDefault();
     const value = this.input.value;
-    console.log(value);
     this.props.dispatch(setLocation(value));
     this.props.dispatch(fetchRestaurant(value));
     this.value="";
@@ -23,7 +22,7 @@ export class HungryList extends React.Component {
     }
     let buttons;
     if (this.props.restaurants.length > 0) {
-    buttons=<NeverList restaruantProps = {this.props.restaurants}/>;
+    buttons=<NeverList restaruantProps={this.props.restaurants}/>;
     }
 
     const restaurants = this.props.restaurants.map((restaurant, index) => {
@@ -39,7 +38,7 @@ export class HungryList extends React.Component {
   return (
     <div className="root">
       <h1 className="headertxt">I'm Hungry</h1>
-      <h3 className= "info-text">
+      <h3 className="info-text">
       Hungry but you don't know what you want to eat? Have no fear the I'm hungry is here.<br/>
       Just enter your city or zip code and we will find a restaurant for you. <br/>
       If a restaurant shows up that you don't like
