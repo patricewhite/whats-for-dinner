@@ -28,8 +28,10 @@ export class HungryList extends React.Component {
     const restaurants = this.props.restaurants.map((restaurant, index) => {
       return (
          <li key={restaurant.id}>
+           <img className='img' src={restaurant.image_url} alt='restaurant'/> <br/>
             Restaurant: {restaurant.name}<br/>
             Type: {restaurant.categories[0].title}<br/>
+            Rating: {restaurant.rating} / 5 <br/>
             Address: {restaurant.location.display_address}<br/>
             Contact: {restaurant.display_phone}
         </li>
