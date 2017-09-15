@@ -8,13 +8,13 @@ Have you ever been hungry but don't know what to eat? If that's you then you've 
 **Deployment**: Heroku, Travis  <br/>
 
 ## Documentation of API <br/>
-**GET** https://full-stack-hungry-app.herokuapp.com/api/restaurants <br/>
+**GET** https://choose-one.herokuapp.com/api/restaurants <br/>
 Allows you to see all the information about the restaurant coming from yelpAPI <br/>
-**GET** https://full-stack-hungry-app.herokuapp.com/api/users <br/>
+**GET** https://choose-one.herokuapp.com/api/users <br/>
 Allows you to see the users in the database <br/>
-**POST** https://full-stack-hungry-app.herokuapp.com/api/users <br/>
+**POST** https://choose-one.herokuapp.com/api/users <br/>
 Allows you to create a user users in the database <br/>
-**POST** https://full-stack-hungry-app.herokuapp.com/api/users/:id/nevers <br/>
+**POST** https://choose-one.herokuapp.com/api/users/:id/nevers <br/>
 Allows you to add a restaurant to a list of restaurants you don't want to see <br/>
 
 ## How to use our code <br/>
